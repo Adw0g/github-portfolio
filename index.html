@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinmayi R | Portfolio</title>
+  <meta name="description" content="Portfolio of Chinmayi R - Computer Science & Data Science undergraduate, AI/ML, IoT, and Full-Stack Developer." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Loading Screen (Similar to Syed Ibad's style) -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-header">
+      <div class="loader-title">
+        <span class="logo-badge">CR</span>
+        <span class="logo-name">Chinmayi R</span>
+      </div>
+      <div class="loaderGame-container">
+        <div class="loaderGame-in">
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+          <div class="loaderGame-line"></div>
+        </div>
+        <div class="loaderGame-ball"></div>
+      </div>
+    </div>
+
+    <div class="loading-marquee">
+      <div class="marquee-track">
+        <span>Computer Science & Data Science</span>
+        <span>AI & Computer Vision</span>
+        <span>IoT & Embedded Systems</span>
+        <span>Full-Stack Development</span>
+        <span>Atria Institute of Technology</span>
+        <span>Computer Science & Data Science</span>
+        <span>AI & Computer Vision</span>
+        <span>IoT & Embedded Systems</span>
+        <span>Full-Stack Development</span>
+      </div>
+    </div>
+
+    <div class="loading-wrap" id="loadingWrap">
+      <div class="loading-hover" id="loadingHover"></div>
+      <div class="loading-button" id="loadingButton">
+        <div class="loading-container" id="loadingContainer">
+          <div class="loading-content">
+            <div class="loading-content-in">Loading <span id="loadPercent">0%</span></div>
+          </div>
+          <div class="loading-box"></div>
+        </div>
+        <div class="loading-content2" id="welcomeBtn">
+          <span>Explore Portfolio <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" data-cursor="hover">
+        <span class="logo-mark">CR</span>
+        <span class="logo-text">Chinmayi R</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" data-cursor="hover">About</a>
+        <a href="#projects" data-cursor="hover">Projects</a>
+        <a href="#skills" data-cursor="hover">Skills</a>
+        <a href="#career" data-cursor="hover">Journey</a>
+        <a href="#contact" data-cursor="hover">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Chinmayi_R_Resume.pdf" target="_blank" class="resume-btn" data-cursor="hover">
+          <span>Resume</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main class="main-body" id="mainBody">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-container section-container">
+        <div class="hero-badge" data-cursor="hover">
+          <span class="badge-dot"></span> Available for Projects & Internships
+        </div>
+        
+        <h1 class="hero-title">
+          <span>Hi, I'm</span>
+          <span class="glitch-text" data-text="Chinmayi R">Chinmayi R</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Computer Science & Data Science Undergraduate specializing in 
+          <span class="highlight">Artificial Intelligence</span>, 
+          <span class="highlight">IoT Systems</span> & 
+          <span class="highlight">Full-Stack Development</span>.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-cursor="hover">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" data-cursor="hover">
+            <span>Let's Talk</span>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Adw0g" target="_blank" title="GitHub" data-cursor="hover">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/chinmayi-r-gowda" target="_blank" title="LinkedIn" data-cursor="hover">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:rchinmayi855@gmail.com" title="Email" data-cursor="hover">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>SCROLL DOWN</span>
+          <div class="mouse-icon">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">01 // ABOUT ME</span>
+          <h2 class="title">Innovating with Code, AI & Hardware</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card intro-card">
+            <h3 class="about-heading">Who I Am</h3>
+            <p class="para">
+              I am a Computer Science & Data Science undergraduate at <strong>Atria Institute of Technology</strong>, Bangalore. 
+              Passionate about bridging intelligent algorithms with impactful, user-focused applications.
+            </p>
+            <p class="para">
+              My hands-on experience covers <strong>Artificial Intelligence, Machine Learning, Computer Vision, IoT-based safety systems</strong>, 
+              and <strong>modern Full-Stack web platforms</strong>. I thrive on translating real-world engineering challenges into elegant software and hardware solutions.
+            </p>
+
+            <div class="about-quick-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Core Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">AI/IoT</span>
+                <span class="stat-label">Specialization</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Director</span>
+                <span class="stat-label">Rotaract Club</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card highlights-card">
+            <h3 class="about-heading">Core Focus Areas</h3>
+            <div class="focus-list">
+              <div class="focus-item">
+                <div class="focus-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <h4>Artificial Intelligence & Vision</h4>
+                  <p>Computer Vision, Google Gemini LLMs, video analysis, and intelligent automation systems.</p>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                  <h4>IoT & Embedded Systems</h4>
+                  <p>Smart sensor integration, Arduino hardware, Blynk cloud triggers, and real-time alerts.</p>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Full-Stack & Data Architecture</h4>
+                  <p>Dynamic web applications, MongoDB schemas, RESTful backend APIs, and intuitive UI designs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="work-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">02 // PORTFOLIO</span>
+          <h2 class="title">Featured Projects</h2>
+          <p class="section-subtext">A selection of engineering projects solving problems in sports analytics, intelligent commerce, and rider safety.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card" data-cursor="hover">
+            <div class="project-num">01</div>
+            <div class="project-tag">Computer Vision & AI</div>
+            <h3 class="project-title">FootBot – AI Football Performance Analysis</h3>
+            <p class="project-desc">
+              An intelligent football video analysis platform utilizing Computer Vision and Google Gemini to evaluate athletic performance. Performs video frame extraction, pose and motion tracking to generate actionable, personalized training recommendations.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Computer Vision</span>
+              <span>Google Gemini</span>
+              <span>Frame Processing</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Adw0g" target="_blank" class="proj-link" title="Source Code">
+                <i class="fa-brands fa-github"></i> Codebase
+              </a>
+              <span class="proj-timeline">2025 – 2026</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-cursor="hover">
+            <div class="project-num">02</div>
+            <div class="project-tag">Full-Stack Web & AI</div>
+            <h3 class="project-title">AI-Powered Automotive Dealership Platform</h3>
+            <p class="project-desc">
+              A luxury car dealership web platform featuring dynamic vehicle inventory, multi-criteria car comparisons, authentication, and online test-drive booking. Includes MongoDB database integration, an admin dashboard, and an integrated AI customer assistant.
+            </p>
+            <div class="project-tech">
+              <span>Full-Stack</span>
+              <span>MongoDB</span>
+              <span>AI Chat Assistant</span>
+              <span>Auth & Security</span>
+              <span>Admin Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Adw0g" target="_blank" class="proj-link" title="Source Code">
+                <i class="fa-brands fa-github"></i> Codebase
+              </a>
+              <span class="proj-timeline">2025 – 2026</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-cursor="hover">
+            <div class="project-num">03</div>
+            <div class="project-tag">IoT & Embedded Systems</div>
+            <h3 class="project-title">Smart Helmet Accident & Emergency Alert</h3>
+            <p class="project-desc">
+              Hardware-software safety system built with Arduino Uno and sensors to instantly detect motorcycle collisions. Automatically triggers real-time visual/buzzer warnings and sends emergency geolocation notifications to contacts via Blynk IoT cloud.
+            </p>
+            <div class="project-tech">
+              <span>Arduino Uno</span>
+              <span>C / C++</span>
+              <span>Blynk IoT</span>
+              <span>IR & Impact Sensors</span>
+              <span>Emergency SOS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Adw0g" target="_blank" class="proj-link" title="Source Code">
+                <i class="fa-brands fa-github"></i> Codebase
+              </a>
+              <span class="proj-timeline">2025 – 2026</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">03 // CAPABILITIES</span>
+          <h2 class="title">Technical Skillset</h2>
+          <p class="section-subtext">Technologies, languages, and development tools I work with daily.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming Languages</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-solid fa-c"></i> C Language</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="chip"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Core Engineering & AI</h3>
+            <div class="skill-chips">
+              <span class="chip">Data Structures & Algo</span>
+              <span class="chip">Database Management (DBMS)</span>
+              <span class="chip">Computer Vision</span>
+              <span class="chip">Google Gemini AI</span>
+              <span class="chip">Cloud Computing</span>
+              <span class="chip">IoT Architecture</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Tools & Platforms</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="chip"><i class="fa-brands fa-figma"></i> Figma UI/UX</span>
+              <span class="chip"><i class="fa-solid fa-bolt"></i> n8n Automation</span>
+              <span class="chip"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+              <span class="chip"><i class="fa-solid fa-microchip"></i> Arduino Uno</span>
+              <span class="chip"><i class="fa-solid fa-cloud"></i> Blynk IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section class="career-section" id="career">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">04 // EXPERIENCE & EDUCATION</span>
+          <h2 class="title">Academic & Leadership Journey</h2>
+        </div>
+
+        <div class="career-timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1: Rotaract Leadership -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4>Board of Director</h4>
+                  <h5>Rotaract Club of Atria Institute of Technology</h5>
+                </div>
+                <span class="timeline-year">2025 – Present</span>
+              </div>
+              <p class="timeline-desc">
+                Serving on the Board of Directors, steering student-led initiatives, technology events, societal outreach programs, and cross-departmental youth leadership activities.
+              </p>
+              <div class="timeline-badge"><i class="fa-solid fa-award"></i> Leadership & Management</div>
+            </div>
+          </div>
+
+          <!-- Item 2: BE College -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4>B.E. in Computer Science & Data Science</h4>
+                  <h5>Atria Institute of Technology, Bangalore</h5>
+                </div>
+                <span class="timeline-year">2024 – Present</span>
+              </div>
+              <p class="timeline-desc">
+                Deepening knowledge in Data Structures, Algorithms, DBMS, Cloud Systems, Machine Learning algorithms, and Computer Vision solutions.
+              </p>
+              <div class="timeline-badge"><i class="fa-solid fa-graduation-cap"></i> CGPA: 6.67</div>
+            </div>
+          </div>
+
+          <!-- Item 3: IBM Certification -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4>AI Fundamentals: Foundations for AI</h4>
+                  <h5>IBM SkillsBuild Certification</h5>
+                </div>
+                <span class="timeline-year">2026</span>
+              </div>
+              <p class="timeline-desc">
+                Certified in fundamental AI principles, machine learning concepts, ethical considerations in artificial intelligence, and applied computational workflows.
+              </p>
+              <div class="timeline-badge"><i class="fa-solid fa-certificate"></i> Certified Credential</div>
+            </div>
+          </div>
+
+          <!-- Item 4: PUC -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4>Pre-University Course (PCME)</h4>
+                  <h5>MES College of Arts, Commerce and Science</h5>
+                </div>
+                <span class="timeline-year">2022 – 2024</span>
+              </div>
+              <p class="timeline-desc">
+                Completed secondary education majoring in Physics, Chemistry, Mathematics, and Electronics, cultivating core mathematical, logical, and scientific problem-solving competencies.
+              </p>
+              <div class="timeline-badge"><i class="fa-solid fa-check"></i> Score: 78.83%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-box-wrap">
+          <div class="contact-header">
+            <span class="section-label">05 // GET IN TOUCH</span>
+            <h2 class="title">Let's Connect & Build Together</h2>
+            <p class="para">
+              Whether you want to discuss AI, collaborate on open-source projects, or explore internship opportunities, feel free to drop me a message!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-card">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email Me</h4>
+                  <a href="mailto:rchinmayi855@gmail.com" class="contact-val" data-cursor="hover">
+                    rchinmayi855@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Call / WhatsApp</h4>
+                  <a href="tel:+919620667450" class="contact-val" data-cursor="hover">
+                    +91 9620667450
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <span class="contact-val">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <div>
+                  <h4>Official Resume</h4>
+                  <a href="Chinmayi_R_Resume.pdf" target="_blank" class="contact-val resume-link" data-cursor="hover">
+                    Download Chinmayi_R_Resume.pdf <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="socials-card">
+              <h4>Find Me Online</h4>
+              <p>Active on these platforms:</p>
+              
+              <div class="social-links-grid">
+                <a href="https://github.com/Adw0g" target="_blank" class="social-btn" data-cursor="hover">
+                  <div class="social-btn-inner">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/chinmayi-r-gowda" target="_blank" class="social-btn" data-cursor="hover">
+                  <div class="social-btn-inner">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="fast-mail-box">
+                <a href="mailto:rchinmayi855@gmail.com?subject=Hello%20Chinmayi%20-%20Opportunity" class="btn btn-primary btn-block" data-cursor="hover">
+                  <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-container footer-content">
+        <p>© 2026 Designed & Developed by <span>Chinmayi R</span></p>
+        <div class="footer-links">
+          <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
